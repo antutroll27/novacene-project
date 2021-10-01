@@ -8,6 +8,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 .container{
@@ -15,6 +16,7 @@ body{
     padding: 0 2rem;
     margin: 0 auto;
 }
+
 
 header{
     width: 100%;
@@ -36,17 +38,20 @@ header:after{
 
 .mountain1{
     position: absolute;
-    bottom: -100px;
-    width: 1500px;
+    filter: drop-shadow(0 0 0.3rem rgb(0, 0, 0));
+    bottom: -10px;
+    width: 1800px;
     right: 0;
     z-index: 19;
 }
 
 .person{
     position: absolute;
-    width: 650px;
-    bottom: -100px;
-    left: -70px;
+    animation:headShake;
+    width: 850px;
+    filter: drop-shadow(0 0 0.3rem rgb(0, 0, 0));
+    bottom: 10px;
+    left: -180px;
     z-index: 20;
 }
 
@@ -61,7 +66,7 @@ header:after{
 .mountain3{
     position: absolute;
     width: 900px;
-    bottom: 150px;
+    bottom: 70px;
     right: 0;
     z-index: 17;
 }
@@ -69,7 +74,7 @@ header:after{
 .sky{
     position: absolute;
     width: 2100px;
-    bottom: 250px;
+    bottom: 60px;
     right: 0;
 }
 
@@ -90,7 +95,7 @@ nav .container{
 }
 
 .logo{
-    color: #fff;
+    color: rgb(0, 0, 0);
     height: 2px;
     left: 2px;
     font-size: 1.5rem;
@@ -166,7 +171,8 @@ section .container{
 }
 
 section img{
-    width: 100%;
+    width: 400%;
+    
 }
 
 section .container > *{
@@ -175,6 +181,7 @@ section .container > *{
 
 .content{
     color: #fff;
+    
     transform: translateY(-50px);
 }
 
@@ -184,10 +191,15 @@ section .container > *{
 
 .title{
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
+    top: -40px;
+    left: -50px;
     margin-bottom: 1rem;
     padding-bottom: .5rem;
     position: relative;
+}
+.text{
+    left: -50px !important;
 }
 
 .border{
@@ -213,7 +225,7 @@ section .container > *{
     opacity: 0;
 }
 
-@media (max-width: 850px){
+@media (max-width: 1000px){
     section .container{
         grid-template-columns: 1fr;
     }
@@ -221,11 +233,12 @@ section .container > *{
 
 @media(max-width: 600px){
     .big-title{
-        font-size: 3rem
+        font-size: 5rem
     }
 
     .text{
-        font-size: .8rem;
+        font-size: 3rem;
+        left:-50px;
     }
 
     .title{
