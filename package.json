@@ -4,7 +4,7 @@
   "description": "Novacene is a new age Ecological Startup that shall deal with environmental and climate change issues using Smart Contracts .",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-css": "tailwindcss build style.css -o css/tailwind.css"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/antutroll27/novacene.io#readme",
   "dependencies": {
+    "daisyui": "^1.14.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
     "tailwindcss": "^2.2.16"
   }
 }
