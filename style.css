@@ -83,6 +83,7 @@ header:after{
     width: 2100px;
     bottom: 60px;
     right: 0;
+    background: 'cover';
 }
 
 nav{
