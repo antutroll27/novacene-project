@@ -20,7 +20,7 @@ section{
     min-height: 100vh;
 }
 section h2{
-    margin-left: 450px;
+    margin-left: 500px;
     font-size: 4.5rem;
     color: #fff;
     margin-bottom: 40px;
@@ -34,7 +34,7 @@ section .contain{
 }
 section .contain .img-box{
     position: relative;
-    left:80px;
+    left:200px;
     width:1000px;
     height:500px;
     overflow:hidden;
@@ -49,8 +49,8 @@ section .contain .img-box img{
 }
 section .contain .content-sentence{
     position: absolute;
-    right: -300px;
-    margin-top: 400px;
+    right: -550px;
+    margin-top: 200px;
     margin-bottom: 40px;
     padding:40px;
     background: #333;

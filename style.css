@@ -7,13 +7,15 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body
 {
     background: #111;
     font-family: 'Poppins', sans-serif;
     padding-bottom: 300px;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
 }
 
 .container{
@@ -159,3 +161,10 @@ nav .container{
     font-weight: 600;
     color: #fff;
 }
+.footer{
+    position:absolute;
+    bottom:-5700px;
+    }
+.svg{
+    left: 20px;
+    }
