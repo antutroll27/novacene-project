@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-body
-{
-    background: #111;
-    font-family: 'Poppins', sans-serif;
-    padding-bottom: 300px;
-    overflow-x: hidden;
-}
+
 body:before{
     content: 'Novacene Novacene Novacene';
     position: fixed;
@@ -19,6 +13,7 @@ body:before{
 }
 section{
     position: relative;
+    margin-top: 150px;
     display:flex;
     justify-content: center;
     align-items: center;
