@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body
+{
+    background: #111;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 300px;
+    overflow-x: hidden;
+}
+body:before{
+    content: 'Novacene Novacene Novacene';
+    position: fixed;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size:16rem;
+    font-weight:800;
+    color:transparent;
+    -webkit-text-stroke: 1px rgb(75, 74, 74);
+}
+section{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section h2{
+    margin-left: 450px;
+    font-size: 4.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+section .contain{
+    position:relative;
+    width:1000px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .contain .img-box{
+    position: relative;
+    left:80px;
+    width:1000px;
+    height:500px;
+    overflow:hidden;
+    box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+}
+section .contain .img-box img{ 
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:80%;height: 80%;
+    object-fit: cover;
+}
+section .contain .content-sentence{
+    position: absolute;
+    right: -300px;
+    margin-top: 400px;
+    margin-bottom: 40px;
+    padding:40px;
+    background: #333;
+    z-index: 1;
+    max-width: 400px;
+    color: #fff;
+    box-shadow:0 25px 35px rgba(0,0,0,0.1);
+    
+}
+

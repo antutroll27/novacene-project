@@ -1,0 +1,23 @@
+{
+  "name": "novacene-project",
+  "version": "1.0.0",
+  "description": "Novacene is a new age Ecological Startup that shall deal with environmental and climate change issues using Smart Contracts .",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antutroll27/novacene.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antutroll27/novacene.io/issues"
+  },
+  "homepage": "https://github.com/antutroll27/novacene.io#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.16"
+  }
+}
