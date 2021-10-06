@@ -32,3 +32,25 @@ window.addEventListener('scroll', () => {
 
     border.style.width = `${scroll / (sectionY.top + section_height) * 30}%`;
 })
+function showcontent(x){
+
+    if(window.XMLHttpRequest) {
+      xmlhttp = new XMLHttpRequest();
+    } else {
+      xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+    }
+
+    xmlhttp.onreadystatechange = function() {
+      if(xmlhttp.readyState == 1) {
+          document.getElementById('loader').innerHTML = "<img src='img/loading.gif' />";
+      }
+      if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        document.getElementById('loader').innerHTML = xmlhttp.responseText;
+      } 
+    }
+
+    xmlhttp.open('POST', x+'.html', true);
+    xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+    xmlhttp.send(null);
+
+  }
