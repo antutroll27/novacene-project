@@ -28,7 +28,7 @@
         </nav>
 
         <h1 class="big-title translate" data-speed="0.1">The story of humanity’s 
-            <span style = "display: block;margin-top: 0.4em;">global endeavour. </span></h1>
+            <span style = "display: block;">Global endeavour. </span></h1>
         
 
 
@@ -94,13 +94,16 @@
    <script scr="jarallax-element.js"></script>
    <script type="text/javascript">
        jarallax(document.querySelectorAll('.jarallax'), {
-       speed: 0.6
+       speed: 0.4
    });
-   jarallax(document.querySelectorAll('.jarallax'), {
+   </script>
+   <script type="text/javascript">
+     jarallax(document.querySelectorAll('.jarallax'), {
     disableParallax: /iPad|iPhone|iPod|Android/,
-    });
-       </script>
+    disableVideo: /iPad|iPhone|iPod|Android/
+});
+   </script>
     <script src="app.js"></script>
-    <!-- component -->
+    
 </body>
 </html>
